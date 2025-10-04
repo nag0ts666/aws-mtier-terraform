@@ -20,9 +20,9 @@ Secure, scalable serverless file manager: upload, download, list, and delete fil
 
 ---
 
-## 🧱 Architecture & Project Structure
+## Architecture & Project Structure
 
-### 🏗 Architecture
+### Architecture
 ```mermaid
 flowchart TD
   U[User / curl / Browser] -->|HTTPS| AGW[Amazon API Gateway]
@@ -44,7 +44,7 @@ flowchart TD
   U <--> AGW
 ```
 
-### 📂 Project Structure
+### Project Structure
 ```
 aws-mtier-terraform/
 │
