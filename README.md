@@ -3,7 +3,7 @@
 Secure, scalable serverless file manager: upload, download, list, and delete files via **API Gateway → Lambda (Python) → S3**, provisioned with **Terraform**. Terraform state is stored in **S3** with **DynamoDB** locking.
 
 **Tech:** Terraform · AWS Lambda · API Gateway · S3 · DynamoDB · IAM · GitHub Actions 
-
+ 
 ---
 
 ## Demo (screenshots)
