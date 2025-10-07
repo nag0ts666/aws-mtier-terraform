@@ -19,6 +19,26 @@ Secure, scalable serverless file manager: upload, download, list, and delete fil
   <img src="assets/s3-object.png" width="48%" alt="S3 object"/>
   <img src="assets/curl-output.png" width="48%" alt="API curl output (optional)"/>
 </p>
+## Demo (screenshots)
+> Add these files in `/assets` and they’ll appear automatically (instructions below).
+
+<p align="center">
+  <img src="assets/terraform-plan.png" width="48%" alt="Terraform plan"/>
+  <img src="assets/lambda-test.png" width="48%" alt="Lambda test"/>
+</p>
+<p align="center">
+  <img src="assets/s3-object.png" width="48%" alt="S3 object"/>
+  <img src="assets/curl-output.png" width="48%" alt="API curl output (optional)"/>
+</p>
+
+---
+
+## 🚀 Try it Yourself
+
+You can test the live API endpoint below to experience how the architecture connects **API Gateway → Lambda → S3** in real time:
+
+```bash
+curl https://mr1o39zga6.execute-api.us-east-1.amazonaws.com/list
 
 ---
 
