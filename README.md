@@ -1,3 +1,5 @@
+[![Terraform CI/CD](https://github.com/nag0ts666/aws-mtier-terraform/actions/workflows/terraform.yml/badge.svg)](https://github.com/nag0ts666/aws-mtier-terraform/actions/workflows/terraform.yml)
+
 # AWS Multi-Tier Serverless Web App (Terraform + Lambda + API Gateway + S3)
 
 Secure, scalable serverless file manager: upload, download, list, and delete files via **API Gateway → Lambda (Python) → S3**, provisioned with **Terraform**. Terraform state is stored in **S3** with **DynamoDB** locking.
