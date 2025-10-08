@@ -26,6 +26,7 @@ It demonstrates **Infrastructure as Code (IaC)** best practices, **CI/CD automat
 
 You can test the live API endpoint below to experience how the architecture connects **API Gateway → Lambda → S3** in real time:
 
+```markdown
 ```bash
 curl https://mr1o39zga6.execute-api.us-east-1.amazonaws.com/list
 ```
@@ -74,3 +75,5 @@ aws-mtier-terraform/
 
 ---
 
+```markdown
+⭐ **Keywords:** Infrastructure-as-Code | AWS | DevSecOps | Serverless | Terraform | CI/CD | Automation
