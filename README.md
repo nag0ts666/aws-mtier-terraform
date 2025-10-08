@@ -28,7 +28,7 @@ You can test the live API endpoint below to experience how the architecture conn
 
 ```bash
 curl https://mr1o39zga6.execute-api.us-east-1.amazonaws.com/list
-
+```
 ---
 
 ## Architecture
