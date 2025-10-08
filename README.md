@@ -2,9 +2,10 @@
 
 # AWS Multi-Tier Serverless Web App (Terraform + Lambda + API Gateway + S3)
 
-Secure, scalable serverless file manager: upload, download, list, and delete files via **API Gateway → Lambda (Python) → S3**, provisioned with **Terraform**. Terraform state is stored in **S3** with **DynamoDB** locking.
+This project showcases a **secure, automated, and scalable serverless architecture** built using Terraform and AWS.  
+It demonstrates **Infrastructure as Code (IaC)** best practices, **CI/CD automation**, and **serverless application deployment**—ideal for showcasing AWS DevSecOps and architecture skills to recruiters.
 
-**Tech:** Terraform · AWS Lambda · API Gateway · S3 · DynamoDB · IAM · GitHub Actions 
+**Tech Stack:** Terraform · AWS Lambda · API Gateway · S3 · DynamoDB · IAM · GitHub Actions  
 
 ---
 
@@ -18,21 +19,10 @@ Secure, scalable serverless file manager: upload, download, list, and delete fil
   <img src="assets/s3-object.png" width="48%" alt="S3 object"/>
   <img src="assets/curl-output.png" width="48%" alt="API curl output (optional)"/>
 </p>
-## Demo (screenshots)
-> Add these files in `/assets` and they’ll appear automatically (instructions below).
-
-<p align="center">
-  <img src="assets/terraform-plan.png" width="48%" alt="Terraform plan"/>
-  <img src="assets/lambda-test.png" width="48%" alt="Lambda test"/>
-</p>
-<p align="center">
-  <img src="assets/s3-object.png" width="48%" alt="S3 object"/>
-  <img src="assets/curl-output.png" width="48%" alt="API curl output (optional)"/>
-</p>
 
 ---
 
-## 🚀 Try it Yourself
+## Try it Yourself
 
 You can test the live API endpoint below to experience how the architecture connects **API Gateway → Lambda → S3** in real time:
 
@@ -41,9 +31,8 @@ curl https://mr1o39zga6.execute-api.us-east-1.amazonaws.com/list
 
 ---
 
-## Architecture & Project Structure
+## Architecture
 
-```
 flowchart TD
   U[User / curl / Browser] -->|HTTPS| AGW[Amazon API Gateway]
   AGW -->|Lambda Proxy| L1[Lambda: upload_file]
@@ -62,10 +51,10 @@ flowchart TD
   end
 
   U <--> AGW
-```
 
-### Project Structure
-```
+---
+
+## Project Structure
 aws-mtier-terraform/
 │
 ├── infra/
@@ -77,11 +66,9 @@ aws-mtier-terraform/
 │   ├── .terraform.lock.hcl      # Provider version lock
 │   └── modules/                 # Networking, compute, and data modules
 │
-├── .gitignore                   # Ignore .terraform, tfstate, zip files
-├── README.md                    # Documentation (this file)
-```
+├── .github/workflows/terraform.yml  # CI/CD automation pipeline
+├── .gitignore                       # Ignore .terraform, tfstate, zip files
+├── README.md                        # Documentation (this file)
 
- 
- 
- 
- 
+---
+
