@@ -9,7 +9,6 @@ Secure, scalable serverless file manager: upload, download, list, and delete fil
 ---
 
 ## Demo (screenshots)
-> Add these files in `/assets` and they’ll appear automatically (instructions below).
 
 <p align="center">
   <img src="assets/terraform-plan.png" width="48%" alt="Terraform plan"/>
@@ -44,8 +43,7 @@ curl https://mr1o39zga6.execute-api.us-east-1.amazonaws.com/list
 
 ## Architecture & Project Structure
 
-### Architecture
-```mermaid
+```
 flowchart TD
   U[User / curl / Browser] -->|HTTPS| AGW[Amazon API Gateway]
   AGW -->|Lambda Proxy| L1[Lambda: upload_file]
