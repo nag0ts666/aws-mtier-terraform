@@ -72,8 +72,8 @@ aws-mtier-terraform/
 ├── .github/workflows/terraform.yml  # CI/CD automation pipeline
 ├── .gitignore                       # Ignore .terraform, tfstate, zip files
 ├── README.md                        # Documentation (this file)
-```
+
 ---
 
 ```markdown
-⭐ **Keywords:** Infrastructure-as-Code | AWS | DevSecOps | Serverless | Terraform | CI/CD | Automation
+⭐ Infrastructure-as-Code | AWS | DevSecOps | Serverless | Terraform | CI/CD | Automation
