@@ -33,10 +33,26 @@ curl https://mr1o39zga6.execute-api.us-east-1.amazonaws.com/list
 
 ## Architecture
 
-<p align="center">
-  <img src="assets/architecture-diagram.png" alt="AWS Multi-Tier Architecture" width="90%">
-</p>
+```mermaid
+flowchart TD
+  U[User / curl / Browser] -->|HTTPS| AGW[Amazon API Gateway]
+  AGW -->|Lambda Proxy| L1[Lambda: upload_file]
+  AGW -->|Lambda Proxy| L2[Lambda: download_file]
+  AGW -->|Lambda Proxy| L3[Lambda: list_files]
+  AGW -->|Lambda Proxy| L4[Lambda: delete_file]
 
+  L1 -->|Presigned PUT| S3[(S3 - Files Bucket)]
+  L2 -->|Presigned GET| S3
+  L3 --> S3
+  L4 --> S3
+
+  subgraph Terraform_State
+    TFS3[(S3 - tfstate bucket)]
+    TFDDB[(DynamoDB - state lock)]
+  end
+
+  U <--> AGW
+```
 
 ---
 
