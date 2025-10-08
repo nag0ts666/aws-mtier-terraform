@@ -72,7 +72,7 @@ aws-mtier-terraform/
 ├── .github/workflows/terraform.yml  # CI/CD automation pipeline
 ├── .gitignore                       # Ignore .terraform, tfstate, zip files
 ├── README.md                        # Documentation (this file)
-
+```
 ---
 
 ```markdown
