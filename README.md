@@ -33,6 +33,7 @@ curl https://mr1o39zga6.execute-api.us-east-1.amazonaws.com/list
 
 ## Architecture
 
+```mermaid
 flowchart TD
   U[User / curl / Browser] -->|HTTPS| AGW[Amazon API Gateway]
   AGW -->|Lambda Proxy| L1[Lambda: upload_file]
