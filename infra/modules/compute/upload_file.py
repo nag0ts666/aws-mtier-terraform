@@ -9,7 +9,7 @@ bucket_name = os.environ["FILES_BUCKET"]
 def handler(event, context):
     print("Event:", json.dumps(event))
 
-    file_id = str(uuid.uuid4()) + ".txt"  # random file name, you can change logic
+    file_id = str(uuid.uuid4()) + ".txt"  
 
     url = s3.generate_presigned_url(
         "put_object",
